@@ -1,0 +1,115 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.container p{
+    padding: 20px;
+    text-align: justify;
+}
+
+.container h2{
+    color: #046307
+}
+
+.container h4{
+    color: #046307;
+    margin-left: 20px;
+}
+
+main {
+    flex: 3;
+}
+aside {
+    flex: 1;
+    background-color:#F4FEF7;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #F4FEF7;
+    
+}
+
+.top-level-ul ul {
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+
+.ref li{
+    padding-bottom: 10px;
+}
+
+aside a{
+    text-decoration : none;
+}
+
+aside li{
+    padding-bottom: 4px;
+}
+
+.stud {
+    text-align: center;
+    line-height: 2;
+    background-color:black;
+    font-size: 20px;
+    color: #90ee90;
+    margin-top: 100px;
+}
+
+.topbtn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background-color: black;
+    color: white;;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+}
+
+.topbtn:hover {
+    background-color: #046307;
+    border: 2px solid white;
+    text-decoration: none;
+   
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+img{
+    width: 90%;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.navbar a{
+    text-decoration: none;
+}

@@ -1,0 +1,292 @@
+*{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth; 
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --main-color: #046307;
+    --second-color: #90ee90;
+    --text-color: #111111;
+    --bg-color: #F4FEF7;
+
+    --box-shadow: 2px 2px 10px 14px rgba(74, 79, 79, 0.15);
+}
+
+body{
+	background: url(../assets/feedback_background.jpeg.jpg) center/cover no-repeat fixed;
+	position:relative;
+	height: 100%;
+	margin: 0;
+}
+
+.main-container{
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#improve {
+    z-index: 10; /* Make sure it appears above other elements */
+}
+
+h2{
+	text-align: center;
+	font-size: 3rem;
+	color:#046307;
+	text-shadow: 
+        -1px -1px 2px white, 
+        1px -1px 2px white, 
+        -1px 1px 2px white, 
+        1px 1px 2px white;
+}	
+
+.main-container p{
+	text-align: center;
+	font-size: 20px;
+
+}
+#feedbackForm {
+	
+	margin-top: 80px;
+    width: 200%;
+	max-width: 900px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+	color:white;
+	position: relative;
+	transform: translateX(-20%);
+}
+
+fieldset{
+		border:3px solid black;
+		border-radius:6px;
+		margin-bottom:10px;
+		padding:10px;
+		
+}
+		
+legend{
+	font-weight:bold;
+	font-size:22px;
+	color:white;
+	
+}
+	
+input:required::placeholder,textarea:required::placeholder,textarea::placeholder{
+	font-size: 18px;
+}
+	
+label{
+	font-size: 20px;
+	margin-top:10px;
+}
+	
+input[type=text] {
+	width: 100%;
+	padding: 15px 20px;
+	margin: 8px 0;
+	display:inline-block;
+	border: 2px solid black;
+	background-color:  #F4FEF7;
+	border-radius: 5px;
+	box-sizing:border-box;
+}
+
+input[type=email] {
+	width: 100%;
+	padding: 15px 20px;
+	margin: 8px 0;
+	display:inline-block;
+	border: 2px solid black;
+	background-color:  #F4FEF7;
+	border-radius: 5px;
+	box-sizing:border-box;
+}
+
+input[type=tel] {
+	width: 100%;
+	padding: 15px 20px;
+	margin: 8px 0;
+	display:inline-block;
+	border: 2px solid black;
+	background-color:  #F4FEF7;
+	border-radius: 5px;
+	box-sizing:border-box;
+	}
+	
+#address {
+	width: 100%;
+	padding: 15px 20px;
+	margin: 8px 0;
+	display:inline-block;
+	border: 2px solid black;
+	background-color:  #F4FEF7;
+	border-radius: 5px;
+	box-sizing:border-box;
+}
+
+#comments {
+	width: 100%;
+	padding: 15px 20px;
+	margin: 8px 0;
+	display:inline-block;
+	border: 2px solid black;
+	background-color:  #F4FEF7;
+	border-radius: 5px;
+	box-sizing:border-box;
+	}
+
+#feedbackType,#improve{
+	width: 100%;
+	padding: 15px 20px;
+	margin: 8px 0;
+	font-size: 18px;
+	display:inline-block;
+	border: 2px solid black;
+	background-color:  #F4FEF7;
+	border-radius: 5px;
+	box-sizing:border-box;
+	
+}
+ input[type="checkbox"],input[type="radio"] {
+    margin-right:5px;
+	width:20px;
+	height:20px;
+	
+}
+
+.rate label{
+	font-size:30px;
+}
+
+#submit,#reset{
+	
+	width:120px;
+	height:40px;
+	font-size:20px;
+	color:white;
+	background-color:black;
+	border: 2px solid white;
+	border-radius: 5px;
+
+}
+
+
+#submit:hover,#reset:hover{
+	background-color:#F4FEF7;
+	color: black;
+	border: 2px solid black;
+}
+
+.rate label:hover{
+	background-color:  #F4FEF7;
+	border-radius: 50px;
+}
+
+footer {
+
+    margin-top:200px;	
+	
+}
+
+#Preview,#message{
+	
+	text-align: center;
+	font-size: 20px;
+	background:rgba(0, 0, 0, 0.6) ;
+	color: white;
+    width: 100%;
+    max-width: 900px;
+	padding:50px;
+	margin-top: 200px;
+	margin-left: 400px;
+	position: relative;
+    
+}
+
+#editBtn,#confirmBtn{
+	margin-top: 20px;
+	color:white;
+	background-color:black;
+}
+@media (max-width: 1024px) {
+    #feedbackForm {
+        width: 90%;
+        transform: translateX(0); /* Remove the horizontal transform */
+        padding: 40px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    #Preview, #message {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #feedbackForm {
+        width: 95%;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #Preview, #message {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    input[type=text], input[type=email], input[type=tel], #address, #comments, #feedbackType, #improve {
+        padding: 12px 15px;
+    }
+
+    #submit, #reset {
+        width: 100px;
+        font-size: 18px;
+    }
+
+    .rate label {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #feedbackForm {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #Preview, #message {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #submit, #reset {
+        width: 100px;
+        font-size: 16px;
+    }
+
+    .rate label {
+        font-size: 20px;
+    }
+
+    input[type=text], input[type=email], input[type=tel], #address, #comments, #feedbackType, #improve {
+        padding: 10px 15px;
+    }
+}

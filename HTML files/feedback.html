@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>BetterMe</title>
+	<!--linking all the related External CSS files and images-->
+    <link rel ="icon" type="image/png" href="../assets/website%20logo.png"> 
+	<link rel="stylesheet" href="../CSS%20files/feedback.CSS">
+	<link rel="stylesheet" href="../CSS%20files/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="logo">
+            <span class="span1"><b>Better</b></span><span class="span2"><b>Me<img src="../assets/website%20logo.png" alt="logo"></b></span>
+        </div>
+        
+        <!--Links-->
+        <ul class="navbar">
+            <li><a href="../HTML%20files/home.html">Home</a></li>
+            <li><a href="../HTML%20files/volunteer.html">Volunteer</a></li>
+            <li><a href="../HTML%20files/table.html">Table</a></li>
+            <li><a href="../HTML%20files/profile.html">User Profile</a></li>
+            <li><a href="../HTML%20files/feedback.html">Feedback</a></li>
+            <li><a href="../HTML%20files/sitemap.html">Sitemap</a></li>
+            <li><a href="../HTML%20files/team.html">Team</a></li>
+
+        </ul>
+
+    </header>
+
+	<!--main container fieldset fo the feedback form-->
+	<fieldset class = "main-container">
+		<div>
+			
+			<form id="feedbackForm" method="POST">
+
+				<h2>Feedback Form</h2>
+				<p>We value your feedback!Please fill out the form below</p>
+			
+				<!--Personal details section-->
+				<fieldset>
+						<!--Full name input-->
+						<legend>Personal Details</legend>
+						<label for="name">Full Name	:</label><br>
+						<input type="text" id="name" name="name" required title="Please enter your full name" placeholder="Enter your full name">
+
+						<br>
+						<!--Email Address input-->
+						<label for="email"> Email Address:</label><br>
+						<input type="email" id="email" name="email" required title="Please enter your correct email"  placeholder="Enter your email">
+						
+						<br>
+						<!--Telephone number input-->
+						<label for="telNo">Telephone Number:</label><br>
+						<input type="tel" id="telNo" name="telNo" required title="Please enter your Telephone Number" placeholder="Enter your Telephone No">
+						
+						<br>
+						<!--Text area for Address-->
+						<label for="address">Address:</label><br>
+						<textarea id="address" name="address" rows="3" title="Please enter your address" placeholder="Enter your address"></textarea>
+				</fieldset>
+				
+				<!--Feedback details section-->
+				<fieldset>
+					<legend>Feedback Details</legend>
+						<!--Text area for comments or messages-->
+						<label for="comments"> Comment or Message: </label>
+						<br>
+						<textarea id="comments" name="comments" required title="Please enter your comments" rows="5" maxlength="250" placeholder= "Write your Comments here...." ></textarea>
+						<!--Caharacter count display-->
+						<p id="charCount">250 characters remaining</p>
+						
+						<!--Dropdown list for feedback type-->
+						<label for="feedbackType">What is your feedback about?</label>
+						<select id="feedbackType" name="feedbackType" required title="Please Select what's your feedback about" >
+							<option value="" disabled selected>Select an option</option>
+							<option value="Physical health">Physical health </option>
+							<option value="Mental Health">Mental Health </option>
+							<option value="healthy Lifestyle">healthy Lifestyle </option>
+							<option value="Diet & Nutrition">Diet & Nutrition </option>
+						</select>
+						
+						<br>
+						<!-- Improvement Suggestions (Multiple Selection) -->
+						<label for="improve"> What should be improve?</label><br>
+						<select id="improve" name="improve" title="Please enter any improvements" multiple size="3">
+							<option value="More diet tips">More diet tips</option>
+							<option value="More mental health content">More mental health content</option>
+							<option value="More workout plans">More workout plans</option>
+							<option value="Better website navigation">Better website navigation</option>
+							<option value="More healthy lifestyle hacks">More healthy lifestyle hacks</option>
+						</select>
+				
+						
+						<br>
+						<!--Radio buttons for website recommendation-->
+						<label> Would you recommend our website?</label><br><br>
+						<input type = "radio" id="yes" name="recommend" value="Yes" required>
+						<label for = "yes"> Yes</label>
+						
+						<input type = "radio" id="maybe" name="recommend" value="Maybe" required>
+						<label for = "maybe">Maybe</label>
+						
+						<input type = "radio" id="no" name="recommend" value="No" required>
+						<label for = "no">No</label>
+						
+						<br><br>
+						<!-- Preferred Submission Date & Time -->
+						<label for= "submissionTime">Preferred Submission Date & Time:</label><br>
+						<input type="datetime-local" id="submissionTime" name="submissionTime"  title="Please enter Preferred Submission Date & Time" value="2025-03-08T10:00">
+						
+						<br><br>
+						<!-- File Attachment Input -->
+						<label for= "attachment">Upload attachments:</label><br>
+						<input type="file" id="attachment" name="attachment"  title="Please upload your attachments" accept=".jpg,.jpeg,.docx, .png, .pdf">
+						
+				</fieldset>			
+			
+				<!--Rating Section-->
+				<fieldset>
+					<!--Radion buttons with emojies to rate the experience in website-->
+					<legend>Rate Your Experience</legend>
+					<div class = "rate">
+						<input type = "radio" id="happy" name="rate" value="5">
+						<label for="happy">😁</label>
+							
+						<input type = "radio" id="normal" name="rate" value="4">
+						<label for="normal">🙂</label>
+							
+						<input type = "radio" id="bup" name="rate" value="3">
+						<label for="bup">😐</label>
+							
+						<input type = "radio" id="sad" name="rate" value="2">
+						<label for="sad">☹️</label>
+							
+						<input type = "radio" id="angry" name="rate" value="1">
+						<label for="angry">😠 </label>
+					</div>
+				</fieldset>
+					<!--Form rest and submit buttons-->
+					<button type="reset" id="reset">Reset</button>
+					<button type="submit" id="submit"> Submit </button>
+			</form>
+		</div>
+	</fieldset>
+	<!--Preview section(hidden by default)-->
+	<div id="Preview" style="display:none;">
+		<!--Preview edit and confirm buttons-->
+		<button id="editBtn" class="btn">Edit</button>
+        <button id="confirmBtn" class="btn">Confirm</button>
+		
+	</div>
+	<!--Sucess message(hidden by default)-->
+	<div id="message" style="display: none;">
+		<h3>Feedback Successfully submitted!</h3>
+	</div>
+
+	<!--linking the feedback javascript file-->
+	<script src="../JS%20files/FeedbackForm.js"></script>
+
+	<!-- footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="../assets/website%20logo.png" alt="Logo">
+        
+            <p class="footer-links">
+                <a href="../HTML%20files/home.html" class="link-1">Home</a>
+                <a href="../HTML%20files/volunteer.html">Volunteer</a>
+                <a href="../HTML%20files/table.html">Table</a>
+                <a href="../HTML%20files/profile.html">User Profile</a>
+                <a href="../HTML%20files/feedback.html">FeedBack</a>
+                <a href="../HTML%20files/sitemap.html">Sitemap</a>
+                <a href="../HTML%20files/team.html">Team</a>
+        
+            </p>
+        
+            <p class="footer-copy-right">Better Me</p>
+            <div class="page-editor">
+                <a href="../HTML%20files/pageEditor_ST3.html">
+                    Page Editor
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>123, Wellness st,</span> Healthy City</p>
+            </div>
+        
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+94 112 345 678</p>
+            </div>
+        
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p><a href="INFO@goodhealth.com">INFO@goodhealth.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About us</span>
+                <p>We are dedicated to promoting good health</p>
+                <p>and well-being by providing knowledge, resources,</p>
+                <p> and support for a healthier lifestyle.</p>
+            
+
+            Quick Links
+            Home
+            <div class="footer-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instergram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        
+        </div>
+    </footer>
+	
+</body>
+</html>

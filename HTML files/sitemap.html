@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>BetterMe</title>
+    <!--linking all the related External CSS files and images-->
+    <link rel ="icon" type="image/png" href="../assets/website%20logo.png"> 
+	<link rel="stylesheet" href="../CSS%20files/Sitemap.css">
+	<link rel="stylesheet" href="../CSS%20files/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="logo">
+            <span class="span1"><b>Better</b></span><span class="span2"><b>Me<img src="../assets/website%20logo.png" alt="logo"></b></span>
+        </div>
+        
+        <!--Links-->
+        <ul class="navbar">
+            <li><a href="../HTML%20files/home.html">Home</a></li>
+            <li><a href="../HTML%20files/volunteer.html">Volunteer</a></li>
+            <li><a href="../HTML%20files/table.html">Table</a></li>
+            <li><a href="../HTML%20files/profile.html">User Profile</a></li>
+            <li><a href="../HTML%20files/feedback.html">Feedback</a></li>
+            <li><a href="../HTML%20files/sitemap.html">Sitemap</a></li>
+            <li><a href="../HTML%20files/team.html">Team</a></li>
+
+        </ul>
+
+    </header>
+
+    <br><br><br><br><br><br><br>
+   
+    <!--Background video for the sitemap page-->
+    <video autoplay muted loop id="background-video">
+        <source src="../assets/sitemap.mp4" type="video/mp4">  
+    </video>
+
+    <h1>Sitemap</h1><br>
+
+    <!--Container for sitemap SVG-->
+    <div class="sitemap-container">
+            <!-- SVG element defining the sitemap structure -->
+            <svg width="1000" height="600" viewBox = "0 0 800 600" class="sitemap">
+                <!--Home page node with link-->
+                <a href="../HTML files/home.html" class="sitemap-link" tabindex="0">
+                    <rect x="390" y="40" width="100" height="50" class="node" ></rect>
+                    <title>Homepage</title>
+                    <text x="440" y="70" class="node-text">Home</text>
+                </a>
+
+                <!--Connecting lines-->
+                <line x1="440" y1="91" x2="440" y2="120" stroke="black" stroke-width="2"></line>
+
+                <!-- Main horizontal line connecting the first-level pages -->
+                <line x1="90" y1="120" x2="790" y2="120" stroke="black" stroke-width="2"></line>
+
+                <!-- Vertical connector lines for each first-level page -->
+                <line x1="90" y1="120" x2="90" y2="170" stroke="black" stroke-width="2"></line>
+                <line x1="230" y1="120" x2="230" y2="170" stroke="black" stroke-width="2"></line>
+                <line x1="370" y1="120" x2="370" y2="170" stroke="black" stroke-width="2"></line>
+                <line x1="510" y1="120" x2="510" y2="170" stroke="black" stroke-width="2"></line>
+                <line x1="650" y1="120" x2="650" y2="170" stroke="black" stroke-width="2"></line>
+                <line x1="790" y1="120" x2="790" y2="170" stroke="black" stroke-width="2"></line>
+                
+                <!--Vertical line connecting Home to the content pages-->
+                <line x1="440" y1="120" x2="440" y2="540" stroke="black" stroke-width="2"></line>
+                
+                <!--Volunteer page node-->
+                <a href="../HTML files/volunteer.html" class="sitemap-link" tabindex="0">
+                    <rect x="30" y="170" width="120" height="50" class="node"></rect>
+                    <title>Volunteer page</title>
+                    <text x="90" y="200" class="node-text">Volunteer</text>
+                </a>
+
+                <!--Table page node-->
+                <a href="../HTML files/table.html" class="sitemap-link" tabindex="0">
+                    <rect x="170" y="170" width="120" height="50" class="node"></rect>
+                    <title>Table page</title>
+                    <text x="230" y="200" class="node-text">Table</text>
+                </a>
+
+                <!--User profile page node-->
+                <a href="../HTML files/profile.html" class="sitemap-link" tabindex="0">
+                    <rect x="310" y="170" width="120" height="50" class="node"></rect>
+                    <title>User profile page</title>
+                    <text x="370" y="200" class="node-text">User Profile</text>
+                </a>
+
+                <!--Feddback page node-->
+                <a href="../HTML files/feedback.html" class="sitemap-link" tabindex="0">
+                    <rect x="450" y="170" width="120" height="50" class="node"></rect>
+                    <title>Feedback page</title>
+                    <text x="510" y="200" class="node-text">Feedback</text>
+                </a>
+
+                <!--Sitemap page node-->
+                <a href="../HTML files/sitemap.html" class="sitemap-link" tabindex="0">
+                    <rect x="590" y="170" width="120" height="50" class="node"></rect>
+                    <title>Sitemap page</title>
+                    <text x="650" y="200" class="node-text">Sitemap</text>
+                </a>
+
+                <!--Team page node-->
+                <a href="../HTML files/team.html" class="sitemap-link" tabindex="0">
+                    <rect x="730" y="170" width="120" height="50" class="node"></rect>
+                    <title>Team page</title>
+                    <text x="790" y="200" class="node-text">Team</text>
+                </a>
+
+                <!-- Connector lines for second-level content pages -->
+                <line x1="440" y1="300" x2="500" y2="300" stroke="black" stroke-width="2"></line>
+                <line x1="440" y1="380" x2="500" y2="380" stroke="black" stroke-width="2"></line>
+                <line x1="440" y1="460" x2="500" y2="460" stroke="black" stroke-width="2"></line>
+                <line x1="440" y1="540" x2="500" y2="540" stroke="black" stroke-width="2"></line>
+               
+                <!--Mental health Content page node-->
+                <a href="../HTML files/content_1_ST1.html" class="sitemap-link" tabindex="0">
+                    <rect x="500" y="270" width="170" height="50" class="node"></rect>
+                    <title>Mental Health Content page</title>
+                    <text x="585" y="295" class="node-text">Mental Health</text>
+                </a>
+
+                <!--Physical health Content page node-->
+                <a href="../HTML files/content_2_ST3.html" class="sitemap-link" tabindex="0">
+                    <rect x="500" y="350" width="170" height="50" class="node" ></rect>
+                    <title>Physical Health Content page</title>
+                    <text x="585" y="380" class="node-text">Physical Health</text>
+                </a>
+
+                <!--Healthy lifestyle Content page node-->
+                <a href="../HTML files/content_3_ST1.html" class="sitemap-link" tabindex="0">
+                    <rect x="500" y="430" width="170" height="50" class="node" ></rect>
+                    <title>Healthy LifeStyle Content page</title>
+                    <text x="585" y="460" class="node-text">Healthy LifeStyle</text>
+                </a>
+
+                <!--Nutrition & Diest Content page node-->
+                <a href="../HTML files/content_4_ST2.html" class="sitemap-link" tabindex="0">
+                    <rect x="500" y="510" width="170" height="50" class="node" ></rect>
+                    <title>Nutrition and Deit Content page</title>
+                    <text x="585" y="540" class="node-text">Nutrition and Deit</text>
+                </a>
+               
+            </svg>
+    </div>
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="../assets/website%20logo.png" alt="Logo">
+        
+            <p class="footer-links">
+                <a href="../HTML%20files/home.html" class="link-1">Home</a>
+                <a href="../HTML%20files/volunteer.html">Volunteer</a>
+                <a href="../HTML%20files/table.html">Table</a>
+                <a href="../HTML%20files/profile.html">User Profile</a>
+                <a href="../HTML%20files/feedback.html">Feedback</a>
+                <a href="../HTML%20files/sitemap.html">Sitemap</a>
+                <a href="../HTML%20files/team.html">Team</a>
+        
+            </p>
+        
+            <p class="footer-copy-right">Better Me</p>
+            <div class="page-editor">
+                <a href="../HTML%20files/pageEditor_ST3.html">
+                    Page Editor
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>123, Wellness st,</span> Healthy City</p>
+            </div>
+        
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+94 112 345 678</p>
+            </div>
+        
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p><a href="INFO@goodhealth.com">INFO@goodhealth.com</a></p>
+            </div>
+        </div> 
+        
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About us</span>
+                <p>We are dedicated to promoting good health</p>
+                <p>and well-being by providing knowledge, resources,</p>
+                <p> and support for a healthier lifestyle.</p>
+            
+
+            Quick Links
+            Home
+            <div class="footer-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instergram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        
+        </div>
+    </footer>
+
+</body>
+</html>

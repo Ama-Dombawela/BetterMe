@@ -40,14 +40,17 @@ BetterMe/
 
 ## 📄Key Pages
 
-- `HTML files/splash.html` - Intro splash screen
-- `HTML files/home.html` - Main landing page
-- `HTML files/feedback.html` - Feedback form page
-- `HTML files/profile.html` - User profile page
-- `HTML files/table.html` - Health comparison table
-- `HTML files/team.html` - Team and role details
-- `HTML files/volunteer.html` - Volunteer section
-- `HTML files/sitemap.html` - Site map
+- Splash Screen - Intro splash screen
+- Home Page - Main landing page
+- Feedback Page - Feedback form page
+- User Profile Page - User profile page
+- Table Page - Health comparison table
+- Team Page - Team and role details
+- Volunteer Page - Volunteer section
+- Sitemap Page - Site map
+- Content Pages - tips, facts, and updates to promote better health and well-being
+- Page Editor x4 - Documentataion of every contributor's tasks by each contributor
+- Validation page x4 - Validation of each contributor's development, ensuring they follow a proper semantic HTML structure, accessibility features and valid CSS properties
 
 ## 👩‍💻My Contributions (Ama Dombawela)
 
